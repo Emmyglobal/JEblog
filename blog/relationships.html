@@ -7,8 +7,21 @@
     <meta name="description" content="Insightful articles on building and maintaining healthy relationships. Explore our latest relationship advice at Orbittech Blog.">
     <link rel="stylesheet" href="https://cdn.tailwindcss.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .heading-font { font-family: 'Playfair Display', serif; }
+        .hero-bg-relationships {
+            background: linear-gradient(rgba(16, 185, 129, 0.85), rgba(16, 185, 129, 0.85)),
+                url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
     <header class="bg-white shadow-md py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="../index.html" class="flex items-center">
@@ -17,67 +30,83 @@
                 </div>
                 <span class="heading-font text-2xl font-bold text-emerald-600">Orbittech</span>
             </a>
-            <nav class="space-x-6">
-                <a href="../index.html#home" class="text-gray-700 hover:text-emerald-600">Home</a>
-                <a href="../index.html#services" class="text-gray-700 hover:text-emerald-600">Services</a>
-                <a href="../index.html#about" class="text-gray-700 hover:text-emerald-600">About</a>
-                <a href="../index.html#blog" class="text-gray-700 hover:text-emerald-600">Blog</a>
-                <a href="../index.html#contact" class="text-gray-700 hover:text-emerald-600">Contact</a>
+            <nav class="space-x-6 hidden md:block">
+                <a href="../index.html#home" class="text-gray-700 hover:text-emerald-600 font-medium">Home</a>
+                <a href="../index.html#services" class="text-gray-700 hover:text-emerald-600 font-medium">Services</a>
+                <a href="../index.html#about" class="text-gray-700 hover:text-emerald-600 font-medium">About</a>
+                <a href="../index.html#blog" class="text-gray-700 hover:text-emerald-600 font-medium">Blog</a>
+                <a href="../index.html#contact" class="text-gray-700 hover:text-emerald-600 font-medium">Contact</a>
             </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero-bg-relationships min-h-[300px] flex items-center justify-center">
+        <div class="container mx-auto px-4 py-16 text-white text-center">
+            <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Relationships Articles</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto drop-shadow">
+                Insightful articles on building and maintaining healthy relationships. Explore our latest relationship advice and tips for a happier life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
     <main class="container mx-auto px-4 py-16">
-        <h1 class="heading-font text-3xl md:text-4xl font-bold mb-10 text-center">Relationships Articles</h1>
-        <div class="max-w-3xl mx-auto space-y-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <!-- Article 1 -->
-            <article class="bg-white rounded-xl shadow-lg p-8">
-                <h2 class="text-2xl font-bold mb-2">5 Ways to Strengthen Family Bonds</h2>
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Family Bonds" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font">5 Ways to Strengthen Family Bonds</h2>
                 <div class="flex items-center text-sm text-gray-500 mb-4">
                     <span>Relationships</span>
                     <span class="mx-2">•</span>
                     <span>June 15, 2025</span>
                 </div>
-                <p class="mb-4">
+                <p class="mb-4 flex-grow">
                     Explore actionable tips to improve communication and connection within your family, fostering a supportive and loving environment.
                 </p>
-                <a href="#" class="text-emerald-600 hover:underline flex items-center">
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
                     Read More <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </article>
             <!-- Article 2 -->
-            <article class="bg-white rounded-xl shadow-lg p-8">
-                <h2 class="text-2xl font-bold mb-2">Healthy Communication in Relationships</h2>
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Healthy Communication" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font">Healthy Communication in Relationships</h2>
                 <div class="flex items-center text-sm text-gray-500 mb-4">
                     <span>Relationships</span>
                     <span class="mx-2">•</span>
                     <span>June 1, 2025</span>
                 </div>
-                <p class="mb-4">
+                <p class="mb-4 flex-grow">
                     Communication is the foundation of any strong relationship. Learn techniques for active listening, empathy, and resolving conflicts.
                 </p>
-                <a href="#" class="text-emerald-600 hover:underline flex items-center">
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
                     Read More <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </article>
             <!-- Article 3 -->
-            <article class="bg-white rounded-xl shadow-lg p-8">
-                <h2 class="text-2xl font-bold mb-2">Balancing Work and Personal Life</h2>
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Work Life Balance" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font">Balancing Work and Personal Life</h2>
                 <div class="flex items-center text-sm text-gray-500 mb-4">
                     <span>Relationships</span>
                     <span class="mx-2">•</span>
                     <span>May 20, 2025</span>
                 </div>
-                <p class="mb-4">
+                <p class="mb-4 flex-grow">
                     Discover strategies to maintain healthy relationships while managing career demands and personal responsibilities.
                 </p>
-                <a href="#" class="text-emerald-600 hover:underline flex items-center">
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
                     Read More <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </article>
         </div>
-        <div class="mt-12 text-center">
-            <a href="../index.html#blog" class="text-emerald-600 hover:underline flex items-center justify-center">
+        <div class="mt-16 text-center">
+            <a href="../index.html#blog" class="inline-block px-6 py-3 rounded-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">
                 <i class="fas fa-arrow-left mr-2"></i> Back to Blog
             </a>
         </div>
