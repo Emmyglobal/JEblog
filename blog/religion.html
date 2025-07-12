@@ -20,9 +20,9 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100 text-gray-800">
     <!-- Header -->
-    <header class="bg-white shadow-md py-4">
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="../index.html" class="flex items-center">
                 <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center mr-2">
@@ -30,22 +30,32 @@
                 </div>
                 <span class="heading-font text-2xl font-bold text-emerald-600">Orbittech</span>
             </a>
-            <nav class="space-x-6 hidden md:block">
-                <a href="../index.html#home" class="text-gray-700 hover:text-emerald-600 font-medium">Home</a>
-                <a href="../index.html#services" class="text-gray-700 hover:text-emerald-600 font-medium">Services</a>
-                <a href="../index.html#about" class="text-gray-700 hover:text-emerald-600 font-medium">About</a>
-                <a href="../index.html#blog" class="text-gray-700 hover:text-emerald-600 font-medium">Blog</a>
-                <a href="../index.html#contact" class="text-gray-700 hover:text-emerald-600 font-medium">Contact</a>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="../index.html#home" class="text-gray-700 hover:text-emerald-600 font-medium transition">Home</a>
+                <a href="../index.html#services" class="text-gray-700 hover:text-emerald-600 font-medium transition">Services</a>
+                <a href="../index.html#about" class="text-gray-700 hover:text-emerald-600 font-medium transition">About</a>
+                <a href="../index.html#blog" class="text-gray-700 hover:text-emerald-600 font-medium transition">Blog</a>
+                <a href="../index.html#contact" class="text-gray-700 hover:text-emerald-600 font-medium transition">Contact</a>
             </nav>
-            <button class="md:hidden text-gray-700 focus:outline-none">
+            <!-- Mobile Nav Button -->
+            <button id="mobile-nav-btn" class="md:hidden text-gray-700 focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
+        <!-- Mobile Nav -->
+        <nav id="mobile-nav" class="md:hidden bg-white border-t border-emerald-100 px-4 py-2 hidden">
+            <a href="../index.html#home" class="block py-2 text-gray-700 hover:text-emerald-600 font-medium">Home</a>
+            <a href="../index.html#services" class="block py-2 text-gray-700 hover:text-emerald-600 font-medium">Services</a>
+            <a href="../index.html#about" class="block py-2 text-gray-700 hover:text-emerald-600 font-medium">About</a>
+            <a href="../index.html#blog" class="block py-2 text-gray-700 hover:text-emerald-600 font-medium">Blog</a>
+            <a href="../index.html#contact" class="block py-2 text-gray-700 hover:text-emerald-600 font-medium">Contact</a>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-bg-religion min-h-[300px] flex items-center justify-center">
-        <div class="container mx-auto px-4 py-16 text-white text-center">
+    <section class="hero-bg-religion min-h-[300px] flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-emerald-700/70 via-emerald-500/60 to-emerald-400/40"></div>
+        <div class="container mx-auto px-4 py-16 text-white text-center relative z-10">
             <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Religion Articles</h1>
             <p class="text-lg md:text-xl max-w-2xl mx-auto drop-shadow">
                 Thought-provoking analysis on faith, spirituality, and religious traditions. Explore our latest articles and insights on religion.
@@ -55,49 +65,71 @@
 
     <!-- Articles Section -->
     <main class="container mx-auto px-4 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <!-- Article 1 -->
-            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Article 1: Thanksgiving in Psalms (Featured) -->
+            <article class="bg-white rounded-xl shadow-2xl border-2 border-emerald-500 p-8 flex flex-col relative transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow heading-font">Featured</span>
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80" alt="Thanksgiving in Psalms" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl md:text-3xl font-bold mb-2 heading-font text-emerald-700">The Beauty of Thanksgiving: Lessons from Psalms</h2>
+                <div class="flex flex-wrap items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span class="font-semibold text-emerald-600">Religion</span>
+                    <span class="mx-2 hidden md:inline">•</span>
+                    <span>July 12, 2025</span>
+                </div>
+                <blockquote class="italic text-emerald-600 mb-4 bg-emerald-50 rounded px-4 py-2 border-l-4 border-emerald-400">
+                    Psalms 92:1<br>
+                    "How good it is to give thanks to you, O Lord, to sing in your honour, O Most High God."
+                </blockquote>
+                <p class="mb-4 flex-grow text-gray-700 leading-relaxed">
+                    If you study the book of Psalms very closely, you will discover that more than seventy percent of the contents are on prayers for help, protection and defence.<br><br>
+                    This evidences the fact that King David, one of the prominent authors of this Bible book, did not find life all rosy; yet, he saw the beauty in thanksgiving to God.<br><br>
+                    Let us learn from David today.<br><br>
+                    If you still have the breath of life, quit complaining and give thanks.
+                </p>
+                <span class="text-gray-400 text-xs mt-auto">By Orbittech Blog</span>
+            </article>
+            <!-- Article 2 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Faith in Modern Society" class="rounded-lg mb-6 h-48 w-full object-cover">
-                <h2 class="text-2xl font-bold mb-2 heading-font">The Role of Faith in Modern Society</h2>
-                <div class="flex items-center text-sm text-gray-500 mb-4">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">The Role of Faith in Modern Society</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
                     <span>Religion</span>
                     <span class="mx-2">•</span>
                     <span>June 10, 2025</span>
                 </div>
-                <p class="mb-4 flex-grow">
+                <p class="mb-4 flex-grow text-gray-700">
                     Faith continues to shape values, ethics, and community life in the 21st century. This article explores how religious beliefs influence social norms and personal decisions in a rapidly changing world.
                 </p>
                 <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
                     Read More <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </article>
-            <!-- Article 2 -->
-            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+            <!-- Article 3 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
                 <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Interfaith Dialogue" class="rounded-lg mb-6 h-48 w-full object-cover">
-                <h2 class="text-2xl font-bold mb-2 heading-font">Understanding Interfaith Dialogue</h2>
-                <div class="flex items-center text-sm text-gray-500 mb-4">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">Understanding Interfaith Dialogue</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
                     <span>Religion</span>
                     <span class="mx-2">•</span>
                     <span>May 28, 2025</span>
                 </div>
-                <p class="mb-4 flex-grow">
+                <p class="mb-4 flex-grow text-gray-700">
                     Interfaith dialogue promotes peace and understanding among different religious communities. Learn about its importance and how it can bridge divides in multicultural societies.
                 </p>
                 <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
                     Read More <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </article>
-            <!-- Article 3 -->
-            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+            <!-- Article 4 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
                 <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Spirituality vs Religion" class="rounded-lg mb-6 h-48 w-full object-cover">
-                <h2 class="text-2xl font-bold mb-2 heading-font">Spirituality vs. Religion: What’s the Difference?</h2>
-                <div class="flex items-center text-sm text-gray-500 mb-4">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">Spirituality vs. Religion: What’s the Difference?</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
                     <span>Religion</span>
                     <span class="mx-2">•</span>
                     <span>May 15, 2025</span>
                 </div>
-                <p class="mb-4 flex-grow">
+                <p class="mb-4 flex-grow text-gray-700">
                     Many people identify as spiritual but not religious. This article examines the distinctions and overlaps between spirituality and organized religion.
                 </p>
                 <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
@@ -117,5 +149,14 @@
             <p class="text-gray-400">&copy; 2025 Orbittech Blog. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile nav toggle
+        const mobileNavBtn = document.getElementById('mobile-nav-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        mobileNavBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
