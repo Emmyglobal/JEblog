@@ -167,7 +167,7 @@
                         </div>
                         <h3 class="heading-font text-xl font-bold mb-2">Religion</h3>
                         <p class="text-gray-600 mb-4">Thought-provoking analysis on faith, spirituality, and religious traditions.</p>
-                        <a href="blog/religion.html" class="text-emerald-600 font-medium flex items-center">
+                        <a href="blog/religion/religion.html" class="text-emerald-600 font-medium flex items-center">
                             Read Articles <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -182,7 +182,7 @@
                         </div>
                         <h3 class="heading-font text-xl font-bold mb-2">Politics</h3>
                         <p class="text-gray-600 mb-4">Insightful commentary on governance, policy, and current affairs.</p>
-                        <a href="blog/politics.html" class="text-emerald-600 font-medium flex items-center">
+                        <a href="blog//politics/politics.html" class="text-emerald-600 font-medium flex items-center">
                             Read Articles <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -197,7 +197,7 @@
                         </div>
                         <h3 class="heading-font text-xl font-bold mb-2">Relationships</h3>
                         <p class="text-gray-600 mb-4">Expert advice on love, family dynamics, and interpersonal connections.</p>
-                        <a href="blog/relationships.html" class="text-emerald-600 font-medium flex items-center">
+                        <a href="blog/relationships/relationships.html" class="text-emerald-600 font-medium flex items-center">
                             Read Articles <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -212,7 +212,7 @@
                         </div>
                         <h3 class="heading-font text-xl font-bold mb-2">Education</h3>
                         <p class="text-gray-600 mb-4">Cutting-edge perspectives on learning, pedagogy, and academic excellence.</p>
-                        <a href="blog/education.html" class="text-emerald-600 font-medium flex items-center">
+                        <a href="blog/education/education.html" class="text-emerald-600 font-medium flex items-center">
                             Read Articles <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -437,42 +437,90 @@
 
             <!-- Blog Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Blog Card: Buhari's Declared Assets -->
-            <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 relative transition-all">
-            <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow heading-font">News</span>
-            <div class="h-48 bg-cover bg-center" style="background-image: url('./images/buhari.jpg');"></div>
-            <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-3">
-                <span>Politics</span><span class="mx-2">•</span><span>July 14, 2025</span>
-                </div>
-                <h3 class="text-xl font-bold mb-3 heading-font">President Buhari’s Assets Declared After Death</h3>
+            
+                <!-- Blog Card -->
+                <article  class="bg-white rounded-xl shadow-lg p-8 flex flex-col relative transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <img
+                    src="./images/buhari-burial.jpg"
+                    alt="Former President Buhari’s Remains Laid to Rest"
+                    class="w-full h-48 object-cover rounded mb-4"
+                />
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">
+                    Former President Buhari’s Remains Laid to Rest
+                </h2>
+                <p class="text-gray-600 text-sm mt-1">Published July 15, 2025 • Politics</p>
                 <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                After the passing of President Muhammadu Buhari on July 13, 2025, his personal assets were declared. From farmland and livestock to homes across four cities, this declaration paints a picture of a modest yet powerful legacy.
+                    The remains of former President Muhammadu Buhari have been laid to rest at his residence in Daura, Katsina State, with full military and political honors...
                 </p>
-                <a href="blog/politics.html" class="text-emerald-600 font-medium flex items-center">
-                Read More <i class="fas fa-arrow-right ml-2"></i>
+                <a
+                    href="/blog/politics/buhari-burial.html"
+                   class="text-emerald-600 hover:underline flex items-center font-medium mt-auto"
+                >
+                    Read More →
                 </a>
-            </div>
-            </div>
+                </article>
+
+
+                <!-- Blog Card: The Dirty Game of Nigerian Politics -->
+                <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col relative transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow heading-font">Opinion</span>
+                <img
+                    src="https://images.unsplash.com/photo-1588666309992-36684df41247?auto=format&fit=crop&w=800&q=80"
+                    alt="Nigerian Politics is a Dirty Game"
+                    class="rounded-lg mb-6 h-48 w-full object-cover"
+                />
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">The Dirty Game of Nigerian Politics – A System That Rewards the Ruthless</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span>Politics</span>
+                    <span class="mx-2">•</span>
+                    <span>July 14, 2025</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                    Ufuoma Bernard made a viral claim—and many Nigerians silently nodded. Nigerian politics, he said, is not for gentlemen. It’s a ruthless arena where thugs rise faster than thinkers, and promises are broken even before they are made.
+                    <br/><br/>
+                    But is it true that no clean hands survive in Nigerian governance? What kind of system rewards dishonesty and punishes principles?
+                </p>
+                <a href="blog/politics/dirty-politics.html" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                </article>
+
+            <!-- Blog Card: Buhari's Declared Assets -->
+                <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 relative transition-all">
+                <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow heading-font">News</span>
+                <div class="h-48 bg-cover bg-center" style="background-image: url('./images/buhari.jpg');"></div>
+                <div class="p-6">
+                    <div class="flex items-center text-sm text-gray-500 mb-3">
+                    <span>Politics</span><span class="mx-2">•</span><span>July 14, 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 heading-font">President Buhari’s Assets Declared After Death</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                    After the passing of President Muhammadu Buhari on July 13, 2025, his personal assets were declared. From farmland and livestock to homes across four cities, this declaration paints a picture of a modest yet powerful legacy.
+                    </p>
+                    <a href="blog//politics/politics.html" class="text-emerald-600 font-medium flex items-center">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                </div>
 
 
             <!-- Blog Card: Jubril Conspiracy and Buhari -->
-            <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 relative transition-all">
-            <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow heading-font">Opinion</span>
-            <div class="h-48 bg-cover bg-center" style="background-image: url('./images/buhari.jpg');"></div>
-            <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-3">
-                <span>Politics</span><span class="mx-2">•</span><span>July 14, 2025</span>
+                <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 relative transition-all">
+                <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow heading-font">Opinion</span>
+                <div class="h-48 bg-cover bg-center" style="background-image: url('./images/buhari.jpg');"></div>
+                <div class="p-6">
+                    <div class="flex items-center text-sm text-gray-500 mb-3">
+                    <span>Politics</span><span class="mx-2">•</span><span>July 14, 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 heading-font">Charles Awuzie on the Jubril Conspiracy Theory</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                    If Jubril of Sudan truly impersonated Buhari for years, evading global intelligence networks, then both men would qualify as the most sophisticated humans alive. Charles Awuzie breaks down the satire, logic, and strategy behind the viral conspiracy that shook the nation.
+                    </p>
+                    <a href="blog/politics/politics.html" class="text-emerald-600 font-medium flex items-center">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
-                <h3 class="text-xl font-bold mb-3 heading-font">Charles Awuzie on the Jubril Conspiracy Theory</h3>
-                <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                If Jubril of Sudan truly impersonated Buhari for years, evading global intelligence networks, then both men would qualify as the most sophisticated humans alive. Charles Awuzie breaks down the satire, logic, and strategy behind the viral conspiracy that shook the nation.
-                </p>
-                <a href="blog/politics.html" class="text-emerald-600 font-medium flex items-center">
-                Read More <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-            </div>
+                </div>
 
             <!-- Blog Card 1: Buhari -->
                 <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 relative transition-all">
@@ -486,7 +534,7 @@
                     <p class="text-gray-600 text-sm mb-4 leading-relaxed">
                         Former President Buhari passed away on July 13, 2025, at 82. This article provides an in-depth reflection on his health, leadership, controversies, and legacy in Nigeria’s history.
                     </p>
-                    <a href="#" class="text-emerald-600 font-medium flex items-center">
+                    <a href="./blog/politics/politics.html" class="text-emerald-600 font-medium flex items-center">
                         Read More <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                     </div>
@@ -523,7 +571,7 @@
                     <p class="text-gray-600 text-sm mb-4 leading-relaxed">
                         Learn about the journey of Alex Otti—from top-tier banker to the Governor of Abia State, known for reforms and public trust.
                     </p>
-                    <a href="blog/politics.html" class="text-emerald-600 font-medium flex items-center">
+                    <a href="blog/politics/politics.html" class="text-emerald-600 font-medium flex items-center">
                         Read More <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                     </div>
@@ -538,7 +586,7 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3 heading-font">5 Ways to Strengthen Family Bonds</h3>
                     <p class="text-gray-600 text-sm mb-4">Explore actionable tips to improve communication and connection within your family.</p>
-                    <a href="blog/strengthen-family-bonds.html" class="text-emerald-600 font-medium flex items-center">
+                    <a href="blog/relationships/relationships.html" class="text-emerald-600 font-medium flex items-center">
                         Read More <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                     </div>
@@ -553,7 +601,7 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3 heading-font">Understanding Democracy in Africa</h3>
                     <p class="text-gray-600 text-sm mb-4">A deep dive into the evolution and challenges of democratic governance across African nations.</p>
-                    <a href="blog/democracy-in-africa.html" class="text-emerald-600 font-medium flex items-center">
+                    <a href="blog/politics/politics.html" class="text-emerald-600 font-medium flex items-center">
                         Read More <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                     </div>
